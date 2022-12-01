@@ -1,41 +1,38 @@
 class Persona {
-    constructor() {
-    }
-    
   constructor(edad, nombre, telefono) {
-    this.edad = edad;
-    this.nombre = nombre;
-    this.telefono = telefono;
+    this._edad = edad;
+    this._nombre = nombre;
+    this._telefono = telefono;
   }
 
   get edad() {
-    return this.edad;
+    return this._edad;
   }
 
   set edad(edad) {
-    this.edad = edad;
+    this._edad = edad;
   }
   get nombre() {
-    return this.nombre;
+    return this._nombre;
   }
 
   set nombre(nombre) {
-    this.nombre = nombre;
+    this._nombre = nombre;
   }
 
   get telefono() {
-    return this.nombre;
+    return this._nombre;
   }
 
   set telefono(telefono) {
-    this.telefono = telefono;
+    this._telefono = telefono;
   }
 }
 
 const personaObj = new Persona();
 personaObj.edad = 30;
 console.log(personaObj.edad);
-personaObj.nombre = "Juan";
+personaObj.nombre = 'Juan';
 console.log(personaObj.nombre);
-personaObj.telefono = "123456";
+personaObj.telefono = '123456';
 console.log(personaObj.telefono);
